@@ -420,3 +420,309 @@ footer .mark{font-family:var(--display);font-weight:800;font-size:18px;}
 
 .fade-in{opacity:0;transform:translateY(14px);transition:opacity .6s ease, transform .6s ease;}
 .fade-in.in{opacity:1;transform:translateY(0);}
+
+@media (max-width: 780px) {
+
+  /* ---------- Global spacing ---------- */
+
+  .wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .container {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 20px;
+    gap: 28px;
+  }
+
+  section {
+    padding: 56px 0;
+  }
+
+
+  /* ---------- Top image/title ---------- */
+
+  .blend-bg {
+    padding: 90px 20px;
+    background-position: center;
+  }
+
+  .blend-bg .title {
+    font-size: clamp(32px, 9vw, 48px);
+    line-height: 1;
+  }
+
+
+  /* ---------- Navigation ---------- */
+
+  .dash .wrap {
+    height: 60px;
+  }
+
+  .dash .mark {
+    font-size: 19px;
+  }
+
+  .dash .mark span {
+    font-size: 9px;
+  }
+
+  .dash nav a {
+    padding: 16px 20px;
+  }
+
+
+  /* ---------- Hero ---------- */
+
+  .hero .wrap {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+
+  h1.title {
+    font-size: clamp(38px, 11vw, 56px);
+  }
+
+  .hero p.lede {
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  .hero-links {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-links .btn {
+    text-align: center;
+    width: 100%;
+  }
+
+
+  /* ---------- Simulator ---------- */
+
+  .sim-body {
+    padding: 18px;
+  }
+
+  .sim-readout {
+    gap: 10px;
+  }
+
+  .sim-readout .num {
+    font-size: 48px;
+  }
+
+  .sim-readout .unit {
+    font-size: 13px;
+    padding-bottom: 6px;
+  }
+
+
+  /* ---------- Section headings ---------- */
+
+  h2.sec-title {
+    font-size: clamp(30px, 9vw, 42px);
+    max-width: none;
+  }
+
+  .sec-intro {
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
+
+
+  /* ---------- Two-column sections ---------- */
+
+  .two-col {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+
+  /* ---------- Statistics ---------- */
+
+  .readout-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .readout {
+    padding: 16px;
+  }
+
+  .readout .val {
+    font-size: 23px;
+  }
+
+  .readout .lbl {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+
+  /* ---------- Timeline ---------- */
+
+  .timeline::before {
+    left: 13px;
+  }
+
+  .t-item {
+    padding-left: 42px;
+    padding-bottom: 32px;
+  }
+
+  .t-item .t-dot {
+    left: 6px;
+  }
+
+  .t-item h3 {
+    font-size: 18px;
+  }
+
+
+  /* ---------- Training ---------- */
+
+  .train-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .train-item {
+    padding: 22px;
+  }
+
+
+  /* ---------- Comparison bars ---------- */
+
+  .bar-row {
+    grid-template-columns: 1fr;
+    gap: 7px;
+    padding: 16px 0;
+  }
+
+  .bar-row .b-label {
+    font-size: 14px;
+  }
+
+  .bar-row .b-val {
+    text-align: left;
+    font-size: 13px;
+  }
+
+  .bar-track {
+    width: 100%;
+  }
+
+
+  /* ---------- Calculator ---------- */
+
+  .calc {
+    padding: 20px;
+  }
+
+  .calc-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .calc-out {
+    gap: 18px;
+    align-items: flex-start;
+  }
+
+  .calc-out .g-num {
+    font-size: 46px;
+  }
+
+  .calc-out .g-scale {
+    width: 100%;
+    min-width: 0;
+    flex-basis: 100%;
+  }
+
+
+  /* ---------- Links / long URLs ---------- */
+
+  .prose a,
+  .source {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+
+  /* ---------- Footer ---------- */
+
+  footer {
+    padding: 40px 0;
+  }
+
+  footer .container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  footer .text {
+    width: 100%;
+  }
+
+
+  /* ---------- Touch-friendly controls ---------- */
+
+  input[type="range"] {
+    height: 6px;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+  }
+
+}
+
+
+/* Extra-small phones */
+
+@media (max-width: 420px) {
+
+  .wrap {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .blend-bg {
+    padding: 70px 16px;
+  }
+
+  .dash .mark span {
+    display: none;
+  }
+
+  .readout-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .readout {
+    padding: 18px;
+  }
+
+  .sim-readout .num {
+    font-size: 42px;
+  }
+
+  .calc {
+    padding: 18px;
+  }
+}
