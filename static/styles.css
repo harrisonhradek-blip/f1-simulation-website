@@ -16,7 +16,7 @@
 
 .blend-bg {
   background-color: rgba(0, 0, 0, 0.7);
-  background-image: url('/static/f1_background.jpg');
+  background-image: url('static/f1_background.jpg');
   background-blend-mode: darken;
   background-size: cover;
   background-position: center;
