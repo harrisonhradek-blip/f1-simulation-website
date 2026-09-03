@@ -435,6 +435,7 @@ footer .mark{font-family:var(--display);font-weight:800;font-size:18px;}
     margin-right: 0;
     padding: 0 20px;
     gap: 28px;
+    flex-direction: column;
   }
 
   section {
