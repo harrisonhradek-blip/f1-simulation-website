@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Withstanding the Load — How F1 Drivers Survive G-Force</title>
+<title>Withstanding the Load and How F1 Drivers Survive G-Force</title>
 
 <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
@@ -18,15 +18,15 @@
   </div>
 </div>
 <header>
-  <div style="text-align: center; padding: 50px; background-color: white; color: black; width: 100%;">
+  <div class="blend-bg">
   <h1 class="title">How do F1 drivers tolerate extremely high g-forces without injury?</h1>
   </div>
 </header>
 <header class="hero">
   <div class="wrap">
     <div>
-      <h1 class="title">Our CSP Project.</h1>
-      <p class="lede">Through a fast corner, a Formula 1 driver's head and organs can weigh five to six times their resting weight. It happens dozens of times a lap, for two hours, at 50&deg;C in the cockpit. This is the physics behind that load, what it does to the body, and how engineering and training make it survivable.</p>
+      <h1 class="title">Our CSP Project</h1>
+      <p class="lede">In formula 1, a tight corner at a fast speed can cause the driver's body to experience around 5 times the normal weight (5gs), this website aims to show how this is possible and safe with modern technology and with human adaptations.</p>
     </div>
 
     <div class="sim">
@@ -61,8 +61,9 @@
       <h2 class="sec-title">So why the forces exist in the first place?</h2>
       <div class="two-col">
         <div class="prose">
-          <p>When an F1 car accerlates, g-force is the bodys interpretation of that weight inflicted upon the body. There are three places it comes from: braking, cornering, and traction out of a corner.</p>
-          <p><strong>Braking</strong> is the biggest hit. brakes and huge aerodynamic drag can slow the car from around 330km/h to under 100km/h in two seconds. That deceleration regularly reaches <strong>5&ndash;6g</strong>, meaning a driver's organs and head are momentarily trying to keep moving forward at five to six times their own weight.</p>
+          <p>When an F1 car accerlates, g-force is the bodys interpretation of that weight inflicted upon the body. Significant G-forces come from 3 distinct places: Breaking, cornering, and traction out of a corner</p>
+          <p><strong>Braking</strong> is one of the strongest forces. brakes and huge drag from wind resistence can slow the car from around 330km/h to under 100km/h in two seconds. That deceleration regularly reaches <strong>5&ndash;6g</strong>, meaning a driver's organs and head are momentarily trying to keep moving forward at five to six times their own weight.</p>
+          <a href="https://medium.com/@bharatambati/how-formula-1-brakes-work-ffcabcc6b30b" style="margin-bottom: 20px;">https://medium.com/@bharatambati/how-formula-1-brakes-work-ffcabcc6b30b</a>
           <p><strong>Cornering</strong> works differently. The car isn't speeding up or slowing down it's constantly changing direction, which is itself an acceleration toward the centre of the corner (centripetal acceleration). The tighter the corner and the faster you take it, the larger that sideways pull. That's the relationship the simulator above is modelling:</p>
           <div class="formula">
             a = v&sup2; / r &nbsp;&nbsp;&rarr;&nbsp;&nbsp; g = a / 9.81
@@ -273,13 +274,14 @@
 
 </main>
 
-<footer>
-  <div class="wrap">
-    <div class="mark">G-FORCE</div>
-    <p>Figures throughout are illustrative approximations drawn from widely reported motorsport and aerospace ranges, not live telemetry from any specific session. Built to explain the physics, biology, engineering and training behind one question: how do F1 drivers do this every lap?</p>
-  </div>
-  <div class="sources">
-    <p>Holland J, Davis M and Ferguson D (2025) Physiological responses of race car drivers in authentic and simulated motor-racing. Front. Sports Act. Living 7:1498686. doi: 10.3389/fspor.2025.1498686</p>
+<footer style="margin: 50px; padding: 50px;">
+  <div>
+  <h3>Sources:</h3>
+  <p style="margin: 20px;">
+    Baur H, Müller S, Hirschmüller A, Huber G, Mayer F. Reactivity, stability, and strength performance capacity in motor sports. Br J Sports Med. 2006 Nov;40(11):906-10; discussion 911. doi: 10.1136/bjsm.2006.025783. Epub 2006 Sep 1. PMID: 16950885; PMCID: PMC2465029.
+  </p>
+  <p style="margin: 20px;">
+  </p>
   </div>
 </footer>
 
